@@ -8,7 +8,12 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #e6f4ff;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6)), url('images/bgSpace.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: hidden;
 }
 
 .container {
@@ -17,26 +22,20 @@ body {
 	margin: auto;
 }
 
-#title {
-	text-align: center;
-	margin-top: 5rem;
-	font-size: 3rem;
-	font-weight: normal;
-}
-
 #map {
 	width: 90vw;
 	max-width: 510px;
 }
 
 .position .coords {
-	margin: 3rem 0;
+	margin: 1rem 0 2rem;
 }
 
 #lat,
 #lon {
 	font-size: 2rem;
 	font-weight: 300;
+	color: #fafafa;
 }
 
 .world {

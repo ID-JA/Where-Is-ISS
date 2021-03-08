@@ -1,7 +1,7 @@
 const attribution =
 	'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
-const tilesUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+const tilesUrl = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
 const tiles = L.tileLayer(tilesUrl, { attribution, noWrap: true });
 
 const map = L.map('map', {
@@ -10,7 +10,7 @@ const map = L.map('map', {
 	maxBounds: null,
 }).setView([0, 0], 1);
 const issIcon = L.icon({
-	iconUrl: 'iss.png',
+	iconUrl: 'images/iss.png',
 	iconSize: [80, 80],
 });
 
